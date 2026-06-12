@@ -1,0 +1,16 @@
+name: Python Action Demo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Show Message
+        run: echo "Hello GitHub Actions"
